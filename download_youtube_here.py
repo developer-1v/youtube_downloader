@@ -1,14 +1,4 @@
 import os
-
-
-
-
-
-
-
-
-
-
 from yt_dlp import YoutubeDL
 
 def list_and_choose_format(url):

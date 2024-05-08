@@ -6,6 +6,7 @@ import pyperclip
 
 
 
+
 def gui_main():
     global last_handled_content
     last_handled_content = ""  # Variable to track the last content that was manually handled
@@ -178,6 +179,7 @@ def download_video(url, download_path='.', format_id='best'):
     ydl_opts = {
         'format': format_id,
         'outtmpl': f'{download_path}/%(title)s.%(ext)s',
+        'verbose': True,
     }
     try:
         with YoutubeDL(ydl_opts) as ydl:
